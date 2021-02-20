@@ -50,7 +50,7 @@
 	  <h3>Curriculum</h3>
 	  <ul>
 	    <li class="fragment fade-in">Week 1: Understanding Python and its ecosystem, and comparing it with other tools.  Running Python in Jupyter Notebooks</li>
-	    <li class="fragment fade-in">Week 2: Spreadsheet data and corporate finance tasks.</li>
+	    <li class="fragment fade-in">Week 2: Spreadsheet data and corporate finance tasks. <span class="fragment highlight-red">No Trading bots!</span></li>
 	    <li class="fragment fade-in">Week 3: Data from the web via API and investments tasks.</li>
 	    <li class="fragment fade-in">Week 4: Next steps: Collaboration, library management, and other ways to run python.</li>
 	  </ul>
@@ -58,7 +58,7 @@
 
 	<section>
 	  <h3>Python</h3>
-	  <p align="left">Note, in this course we will use Python 3.  Python 2 is an earlier version of Python that is not completely compatible with Python 3.  Python 2 is still around as legacy code, but by the end of 2020 it will no longer receive security updates.</p>
+	  <p align="left">Note, in <span class="fragment highlight-green">this course we will use Python 3</span>.  <span class="fragment highlight-red">Python 2 is an earlier version of Python that is not completely compatible with Python 3</span>.  Python 2 is still around as legacy code, but by the end of 2020 it will no longer receive security updates.</p>
 	</section>
 
 
@@ -98,18 +98,18 @@
 	  <ul>
 	    <li>So for example in Excel you assign to a location and reference a cell location in a calculation:</li>
 	    <pre><code>
-		[A1] = B2 + 1  # assigns the value of B2 + 1 to cell location A1
+[A1] = B2 + 1  # assigns the value of B2 + 1 to cell location A1
 	    </code></pre>
 	    <li>However in Python we assign to, and reference, values instead of locations:
 	      <code><pre>
-		  y = x + 1 # assigns the value of x + 1 to variable y
+y = x + 1 # assigns the value of x + 1 to variable y
 	      </pre></code>
 	    </li>
 	  </ul>
 	</section>
 
 	<section>
-	  <p align="left">The latter method of assigning to values is more efficient for writing and reading, but also has some important benefits that we won't cover in this course.  For example, <b class="fragment highlight-green">we can make certain variables available to functions, however also disallow a function access to other variables</b>.  This means the 'user' can't access certain things we don't want changed.</p>
+	  <p align="left">The latter method of assigning to values is more efficient for writing and reading, but also has some important benefits that we won't cover in this course.  For example, <b class="fragment highlight-green">we can make certain variables private</b>.  This means the 'user' shouldn't access certain things we don't want changed.</p>
 	</section>
 	
 	<section>
@@ -117,8 +117,12 @@
 	    <li class="fragment fade-in">Python can be extended by <b class="fragment highlight-green">creating new data types and methods</b>.</li>
 	    <li class="fragment fade-in">In Python it is much easier to <b class="fragment highlight-green">automate tasks</b> (scripting).</li>
 	    <li class="fragment fade-in">Python can handle much <b class="fragment highlight-green">larger data sets and more varied and intensive calculations</b>.</li>
-	  </ul>
-      
+	  </ul>      
+	</section>
+
+	<section>
+	  <h3>But VB...</h3>
+	  <p align="left">Much of what you can do in Python you can also do by extending Excel's functionality via <span class="fragment highlight-red">the old Visual Basic/VB languages</span>.  <span class="fragment highlight-green">Python is <b>much</b> more widely used</span> than Visual Basic, and this is meaningful when you are looking for help.  <a href="https://stackoverflow.com/tags">See the number of questions for each language here</a>.</p>
 	</section>
 
 
@@ -161,72 +165,6 @@
 	    <li class="fragment fade-in">C/C++/Javascript are not appropriate for spreadsheet like tasks.</li>
 	  </ul>
 	</section>
-
-		<!-- TODO: move the following section to some later point -->
-
-
-<!--
-	<section>
-	  <h3>Functions</h3>
-	  <p align="left">Like mathematical functions, functions in Python take inputs (known as <i>arguments</i>) and return a value.</p>
-	</section>
-
-	<section>
-	  <p align="left">Let >>> denote the python command prompt.
-	  <pre><code>
- >>> print("Hello World.")
-	  </code></pre>
-<p align="left">returns:</p>
-<pre><code>
- Hello World.
-</code></pre>
-	  <p align="left">Where <i>print()</i> is the function, and the string <i>"Hello World."</i> is the argument.  The return value is <i>Hello World.</i>
-	</section>
-
-	<section>
-	  <h3>A Note About Classes</h3>
-	  <p align="left">Python has a class system which allows the user to link functionality to particular data.</p>
-	  <ul>
-	    <li>A class creates a new type of object.</li>
-	    <li>Methods are functions which are tied to a type of object.</li>
-	  </ul>
-	</section>
-
-	<section>
-	  <h3>A Note About Classes</h3>
-	  <p align="left">You don't need know much about Classes and Object Oriented programming to use Python.  We only introduce the term here because often you will see the term <i>method</i>.</p>
-	  <ul>
-	    <li>A Method is a function that is called on an object of a particular class.</li>
-	    <li>A function is not called on a particular object.</li>
-	  </ul>
-	</section>
-
-	<section>
-	  <p align="left">Similarly, object of classes have <i>attributes</i>.  These are bits of information about the object.</p>
-	  <p align="left">But these attributes are specific to each class.</p>
-	</section>
-
-	<section>
-	  <p align="left">So if we write:</p>
-	  <pre><code>
->>> DataFrame.columns   # returns the attribute columns of an object of class dataframe
-	  </code></pre>
-	  <p align="left">This works because the <i>columns</i> attribute is defined for object of class <i>DataFrame</i>.
-	</section>
-
-	<section>
-	  <p align="left">However if we write:</p>
-	  <pre><code>
->>> "some_string".columns   #Error: 'str' object has no attribute 'columns'
-	  </code></pre>
-	</section>
-
-	<section>
-	  <p align="left">Don't worry if all this doesn't make sense right now.  However it will start to make sense as you read documentation and, in particular, error messages.</p>
-	</section>
-
-
-	--->
 
 	<section>
 	  <h3>Exercise</h3>
@@ -416,3 +354,83 @@
 </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- TODO: move the following section to some later point -->
+
+
+<!--
+	<section>
+	  <h3>Functions</h3>
+	  <p align="left">Like mathematical functions, functions in Python take inputs (known as <i>arguments</i>) and return a value.</p>
+	</section>
+
+	<section>
+	  <p align="left">Let >>> denote the python command prompt.
+	  <pre><code>
+ >>> print("Hello World.")
+	  </code></pre>
+<p align="left">returns:</p>
+<pre><code>
+ Hello World.
+</code></pre>
+	  <p align="left">Where <i>print()</i> is the function, and the string <i>"Hello World."</i> is the argument.  The return value is <i>Hello World.</i>
+	</section>
+
+	<section>
+	  <h3>A Note About Classes</h3>
+	  <p align="left">Python has a class system which allows the user to link functionality to particular data.</p>
+	  <ul>
+	    <li>A class creates a new type of object.</li>
+	    <li>Methods are functions which are tied to a type of object.</li>
+	  </ul>
+	</section>
+
+	<section>
+	  <h3>A Note About Classes</h3>
+	  <p align="left">You don't need know much about Classes and Object Oriented programming to use Python.  We only introduce the term here because often you will see the term <i>method</i>.</p>
+	  <ul>
+	    <li>A Method is a function that is called on an object of a particular class.</li>
+	    <li>A function is not called on a particular object.</li>
+	  </ul>
+	</section>
+
+	<section>
+	  <p align="left">Similarly, object of classes have <i>attributes</i>.  These are bits of information about the object.</p>
+	  <p align="left">But these attributes are specific to each class.</p>
+	</section>
+
+	<section>
+	  <p align="left">So if we write:</p>
+	  <pre><code>
+>>> DataFrame.columns   # returns the attribute columns of an object of class dataframe
+	  </code></pre>
+	  <p align="left">This works because the <i>columns</i> attribute is defined for object of class <i>DataFrame</i>.
+	</section>
+
+	<section>
+	  <p align="left">However if we write:</p>
+	  <pre><code>
+>>> "some_string".columns   #Error: 'str' object has no attribute 'columns'
+	  </code></pre>
+	</section>
+
+	<section>
+	  <p align="left">Don't worry if all this doesn't make sense right now.  However it will start to make sense as you read documentation and, in particular, error messages.</p>
+	</section>
+
+
+	--->
